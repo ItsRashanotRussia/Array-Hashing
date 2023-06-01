@@ -1,5 +1,5 @@
 def lengthOfLastWord(s):
-#Split the string into words using the split() method, which returns a list of words.
+#Split the string into words using the split() method
     words = s.split()
 
 #If the list of words is empty, return 0
