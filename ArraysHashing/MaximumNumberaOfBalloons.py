@@ -26,7 +26,7 @@ def max_number_of_balloons(text):
 int maxNumberOfBalloons(string& text) {
     unordered_map<char, int> charCount;
 
-    // Count the frequency of each character in the text
+    //freqy of each char in 
     for (char c : text) {
         charCount[c]++;
     }
