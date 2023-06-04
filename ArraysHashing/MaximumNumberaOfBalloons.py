@@ -13,7 +13,7 @@ int maxNumberOfBalloons(string& text) {
     for (char c : "balon") {
         int count = charCount[c];
         if (c == 'l' || c == 'o') {
-            count /= 2;  // Need two instances of 'l' and 'o' for each 'balloon'
+            count /= 2;
         }
         maxInstances = min(maxInstances, count);
     }
