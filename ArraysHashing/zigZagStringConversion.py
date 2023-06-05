@@ -23,3 +23,20 @@ def printZigZagConcat(s, n):
 
     for row in result:
         print(row, end='')
+
+"""
+
+- Initialize the special cases:
+
+- In the C++ code, an array of strings is used
+In Python code, a list of strings is used (zigzag)
+
+- Use a loop to iterate through each character in the input string.
+
+- Keep track of the current row (row) and the direction of traversal (down or up).
+
+- In C++, the rows are concatenated into a single string res.
+In Python, the rows are joined into a single string using ''.join(zigzag).
+Return or print the resulting zigzag pattern.
+
+"""
