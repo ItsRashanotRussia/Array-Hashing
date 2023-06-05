@@ -37,6 +37,5 @@ In Python code, a list of strings is used (zigzag)
 
 - In C++, the rows are concatenated into a single string res.
 In Python, the rows are joined into a single string using ''.join(zigzag).
-Return or print the resulting zigzag pattern.
 
 """
