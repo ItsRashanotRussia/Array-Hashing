@@ -28,9 +28,6 @@ def printZigZagConcat(s, n):
 
 - Initialize the special cases:
 
-- In the C++ code, an array of strings is used
-In Python code, a list of strings is used (zigzag)
-
 - Use a loop to iterate through each character in the input string.
 
 - Keep track of the current row (row) and the direction of traversal (down or up).
