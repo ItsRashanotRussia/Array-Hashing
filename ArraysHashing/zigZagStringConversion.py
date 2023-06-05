@@ -1,11 +1,13 @@
+#I'm not really confident of my answer
+
 def printZigZagConcat(s, n):
     if n == 1:
         print(s)
         return
     
     result = ['' for _ in range(n)]
-    down = True
-    row = 0
+    down = True #keeps track of the direction of traversal
+    row = 0 #determines the current row
 
     for char in s:
         result[row] += char
@@ -21,8 +23,3 @@ def printZigZagConcat(s, n):
 
     for row in result:
         print(row, end='')
-
-# Driver Code
-str = "PAYPALISHIRING"
-N = 3
-printZigZagConcat(str, N)
