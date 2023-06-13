@@ -36,4 +36,13 @@ int main()
     cout << "The Majority Element is: " << result << endl;
     return 0;
 }
+
+
+1. creates a vector to store the input array elements.
+2. pushes teh elements into the vector.
+3. calls the findMajorityElement function with the input vector as a parameter
+4. stores the result in a variable called 'result'.
+5. initializes the variables element and count.
+6. loops through the input vector and checks each element.
+
 """
