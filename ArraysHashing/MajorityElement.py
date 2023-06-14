@@ -17,17 +17,17 @@ def findMajorityElement(v):
     return element
 
 def main():
-    n = int(input("Enter the size of the list: "))
-    input_list = []
+    n = int(input("enter the size of the list: "))
+    inputList = []
     element = 0
     
-    print("Enter the elements of the list:")
+    print("enter the elements: ")
     for i in range(n):
         element = int(input())
-        input_list.append(element)
+        inputList.append(element)
     
-    result = findMajorityElement(input_list)
-    print("The Majority Element is:", result)
+    result = findMajorityElement(inputList)
+    print("the majority element: ", result)
 
 main()
 
