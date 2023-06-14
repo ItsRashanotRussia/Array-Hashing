@@ -29,9 +29,7 @@ def main():
     result = findMajorityElement(input_list)
     print("The Majority Element is:", result)
 
-if __name__ == "__main__":
-    main()
-
+main()
 
 """
 
