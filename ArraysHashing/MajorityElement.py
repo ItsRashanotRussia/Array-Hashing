@@ -1,5 +1,40 @@
-"""
+#lists instead of vectors
+# same logic inside FindMajorityElement
 
+def findMajorityElement(v):
+    element = 0
+    count = 0
+    
+    for num in v:
+        if count == 0:
+            element = num
+            count = 1
+        elif element == num:
+            count += 1
+        else:
+            count -= 1
+    
+    return element
+
+def main():
+    n = int(input("Enter the size of the list: "))
+    input_list = []
+    element = 0
+    
+    print("Enter the elements of the list:")
+    for i in range(n):
+        element = int(input())
+        input_list.append(element)
+    
+    result = findMajorityElement(input_list)
+    print("The Majority Element is:", result)
+
+if __name__ == "__main__":
+    main()
+
+
+
+"""
 
 int findMajorityElement(vector<int> &v)
 {
@@ -23,17 +58,17 @@ int findMajorityElement(vector<int> &v)
 int main()
 {
     int n;
-    cout << "Enter the size of the vector: ";
+    //user input
     cin >> n;
     vector<int> input;
     int element;
-    cout << "Enter the elements of the vector: ";
+    //user input
     for (int i = 0; i < n; i++) {
         cin >> element;
         input.push_back(element);
     }
     int result = findMajorityElement(input);
-    cout << "The Majority Element is: " << result << endl;
+   //output
     return 0;
 }
 
